@@ -12,7 +12,7 @@ interface UserRepository : JpaRepository<User, Int> {
       FROM users u
       WHERE u.name = :name
       ORDER BY u.id DESC
-      LIMIT :previousCount
+      LIMIT :previousCount;
     """,
     nativeQuery = true
   )
